@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
       // TODO: 7. 버튼 텍스트는 Lucky!로, 글자 크기를 20, 색상을 흰색으로 설정해주세요.
 
       // TODO: 17. 버튼이 클릭되면 텍스트 메시지가 업데이트되도록 처리해주세요. (Hint! 상태 갱신은 setState 메서드를 사용하세요.)
-      body: Container(),
+      body: Image.asset("assets/images/fortune-cookie.jpg"),
     );
   }
 }
