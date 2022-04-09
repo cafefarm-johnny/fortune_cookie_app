@@ -15,8 +15,9 @@ class FortuneCookie extends StatefulWidget {
 class _FortuneCookieState extends State<FortuneCookie> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       // TODO: 18. DEBUG 배너를 제거해주세요. (Hot reload가 안되면 앱을 재시작해주세요.)
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
