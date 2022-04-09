@@ -27,7 +27,7 @@ class FortuneCookieBox {
     return _cookies[pickingCount];
   }
 
-  bool isEmpty(int pickingCount) {
+  bool isPickedAll(int pickingCount) {
     return _cookies.length - 1 == pickingCount;
   }
 }

@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _increasePickingCount() {
-    if (_box.isEmpty(_pickingCount)) {
+    if (_box.isPickedAll(_pickingCount)) {
       _pickingCount = 0;
       return;
     }
