@@ -31,7 +31,20 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Image.asset("assets/images/fortune-cookie.jpg"),
-          const Text("한 줄의 코드라도 어쩌구", style: TextStyle(fontSize: 18)),
+          const Text(
+              "한 줄의 코드라도 어쩌구",
+              style: TextStyle(fontSize: 18)
+          ),
+          MaterialButton(
+            child: const Text(
+              "Lucky!",
+              style: TextStyle(fontSize: 20, color: Colors.white),
+            ),
+            color: Colors.red,
+            height: 50,
+            minWidth: 300,
+            onPressed: () {},
+          )
         ],
       )
     );
