@@ -54,22 +54,47 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          Image.asset("assets/images/fortune-cookie.jpg"),
-          Text(
-              _cookie.message,
-              style: const TextStyle(fontSize: 18)
-          ),
-          MaterialButton(
-            child: const Text(
-              "Lucky!",
-              style: TextStyle(fontSize: 20, color: Colors.white),
+          Container(
+            child: Image.asset("assets/images/fortune-cookie.jpg"),
+            // TODO: margin이 아닌 alignment로는 조정할 수 없을까? 수치값 개념을 모르니 써먹기 힘든데..
+            margin: const EdgeInsets.symmetric(
+              horizontal: 0,
+              vertical: 50
             ),
-            color: Colors.red,
-            height: 50,
-            minWidth: 300,
-            onPressed: () {
-              _pick();
-            },
+          ),
+          Container(
+            child: Text(
+                _cookie.message,
+                style: const TextStyle(fontSize: 18)
+            ),
+            // TODO: margin의 값은 어떤 기준으로 나뉘는걸까?
+            // TODO: 화면을 100으로 잡고 각 요소마다 분담해서 가지게 되나?
+            margin: const EdgeInsets.symmetric(
+              horizontal: 0,
+              vertical: 20
+            ),
+          ),
+          Container(
+            child: MaterialButton(
+              child: const Text(
+                "Lucky!",
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              color: Colors.red,
+              height: 50,
+              minWidth: 300,
+              onPressed: () {
+                _pick();
+              },
+            ),
+            margin: const EdgeInsets.symmetric(
+              horizontal: 0,
+              vertical: 30
+            ),
           )
         ],
       )
